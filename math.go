@@ -1,7 +1,7 @@
 package math
 
 // Calc is a function that return an operation function
-func Calc(operation test.CalcOperation) func(a, b float64) float64 {
+func Calc(operation string) func(a, b float64) float64 {
 	return func(a, b float64) float64 {
 		switch operation {
 			case "+":
